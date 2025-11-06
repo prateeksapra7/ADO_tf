@@ -1,6 +1,6 @@
 resource "azurerm_resource_group" "example" { # resource block, name of the resource, reference name (local name given to the resource)
   name     = "${var.prefix}-resources"
-  location = var.location
+  location = var.location #West Europe
 }
 
 resource "azurerm_virtual_network" "main" {
